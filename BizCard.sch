@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tomlib
+LIBS:BizCard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB-MICRO-B CON?
+U 1 1 5534172E
+P 1700 3050
+F 0 "CON?" H 1400 3400 50  0000 C CNN
+F 1 "USB-MICRO-B" H 1550 2700 50  0000 C CNN
+F 2 "" H 1700 2950 50  0000 C CNN
+F 3 "" H 1700 2950 50  0000 C CNN
+	1    1700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L XBEE M?
+U 1 1 55341780
+P 3900 2400
+F 0 "M?" H 3100 3700 50  0000 L BNN
+F 1 "XBEE" H 3100 1000 50  0000 L BNN
+F 2 "xbee_r1-XBEE" H 3900 2550 50  0001 C CNN
+F 3 "" H 3900 2400 60  0000 C CNN
+	1    3900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117S33CTR U?
+U 1 1 5534185A
+P 1700 1850
+F 0 "U?" H 1700 2100 40  0000 C CNN
+F 1 "LD1117S33CTR" H 1700 2050 40  0000 C CNN
+F 2 "SOT-223" H 1700 1950 40  0000 C CNN
+F 3 "" H 1700 1850 60  0000 C CNN
+	1    1700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L BLE112 U?
+U 1 1 55345287
+P 2700 5500
+F 0 "U?" H 1950 6600 50  0000 L CNN
+F 1 "BLE112" H 1950 6500 50  0000 L CNN
+F 2 "PLCC-28" H 2700 5500 50  0000 C CIN
+F 3 "" H 2700 5500 60  0000 C CNN
+	1    2700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5534588B
+P 1000 3500
+F 0 "#PWR?" H 1000 3250 50  0001 C CNN
+F 1 "GND" H 1000 3350 50  0000 C CNN
+F 2 "" H 1000 3500 60  0000 C CNN
+F 3 "" H 1000 3500 60  0000 C CNN
+	1    1000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3500 1000 3250
+Wire Wire Line
+	1000 3250 1200 3250
+$Comp
+L GND #PWR?
+U 1 1 553458B5
+P 2700 3700
+F 0 "#PWR?" H 2700 3450 50  0001 C CNN
+F 1 "GND" H 2700 3550 50  0000 C CNN
+F 2 "" H 2700 3700 60  0000 C CNN
+F 3 "" H 2700 3700 60  0000 C CNN
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 553458FD
+P 1000 2700
+F 0 "#PWR?" H 1000 2550 50  0001 C CNN
+F 1 "+5V" H 1000 2840 50  0000 C CNN
+F 2 "" H 1000 2700 60  0000 C CNN
+F 3 "" H 1000 2700 60  0000 C CNN
+	1    1000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2700 1000 2850
+Wire Wire Line
+	1000 2850 1200 2850
+$Comp
+L +5V #PWR?
+U 1 1 55345930
+P 1300 1650
+F 0 "#PWR?" H 1300 1500 50  0001 C CNN
+F 1 "+5V" H 1300 1790 50  0000 C CNN
+F 2 "" H 1300 1650 60  0000 C CNN
+F 3 "" H 1300 1650 60  0000 C CNN
+	1    1300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1650 1300 1800
+$Comp
+L +3.3V #PWR?
+U 1 1 5534595D
+P 2100 1650
+F 0 "#PWR?" H 2100 1500 50  0001 C CNN
+F 1 "+3.3V" H 2100 1790 50  0000 C CNN
+F 2 "" H 2100 1650 60  0000 C CNN
+F 3 "" H 2100 1650 60  0000 C CNN
+	1    2100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1650 2100 1800
+$Comp
+L GND #PWR?
+U 1 1 55345A07
+P 1700 2100
+F 0 "#PWR?" H 1700 1850 50  0001 C CNN
+F 1 "GND" H 1700 1950 50  0000 C CNN
+F 2 "" H 1700 2100 60  0000 C CNN
+F 3 "" H 1700 2100 60  0000 C CNN
+	1    1700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 55345B50
+P 2700 1650
+F 0 "#PWR?" H 2700 1500 50  0001 C CNN
+F 1 "+3.3V" H 2700 1790 50  0000 C CNN
+F 2 "" H 2700 1650 60  0000 C CNN
+F 3 "" H 2700 1650 60  0000 C CNN
+	1    2700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1650 2700 1800
+Wire Wire Line
+	2700 1800 2900 1800
+Wire Wire Line
+	2900 3600 2700 3600
+Wire Wire Line
+	2700 3600 2700 3700
+$EndSCHEMATC
